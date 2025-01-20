@@ -174,8 +174,3 @@ Answers:
 - terraform init, terraform run -auto-approve, terraform destroy
 - terraform init, terraform apply -auto-approve, terraform destroy
 - terraform import, terraform apply -y, terraform rm
-
-
-## Submitting the solutions
-
-* Form for submitting: https://courses.datatalks.club/de-zoomcamp-2025/homework/hw1
