@@ -1,4 +1,9 @@
-CREATE TABLE IF NOT EXISTS trips (
+-- Drop tables if they exist
+DROP TABLE IF EXISTS trips;
+DROP TABLE IF EXISTS locations;
+
+-- Create the trips table
+CREATE TABLE trips (
     VendorID INT,
     lpep_pickup_datetime TIMESTAMP,
     lpep_dropoff_datetime TIMESTAMP,
@@ -21,7 +26,8 @@ CREATE TABLE IF NOT EXISTS trips (
     congestion_surcharge DECIMAL(10, 2)
 );
 
-CREATE TABLE IF NOT EXISTS locations(
+-- Create the locations table
+CREATE TABLE locations (
     LocationID INT,
     Borough VARCHAR(255),
     Zone VARCHAR(255),
