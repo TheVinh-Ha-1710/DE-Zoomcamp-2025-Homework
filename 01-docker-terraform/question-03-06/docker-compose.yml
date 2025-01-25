@@ -10,7 +10,21 @@ services:
       - '5433:5432'
     volumes:
       - vol-pgdata:/var/lib/postgresql/data
+  
+  pdadmin:
+    container_name: pgadmin-container
+    image: dpage/pgadmin4:latest
+    environment:
+      PGADMIN_DEFAULT_EMAIL: 'admin@admin.com'
+      PGADMIN_DEFAULT_PASSWORD: 'admin'
+    ports:
+      - '8080:80'
+    depends_on:
+      - db
+
 
 volumes:
   vol-pgdata:
     name: vol-pgdata
+  vol-pgadmin:
+    name: vol-pgadmin
