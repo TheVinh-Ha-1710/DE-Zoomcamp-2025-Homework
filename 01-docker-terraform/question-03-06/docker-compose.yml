@@ -26,5 +26,3 @@ services:
 volumes:
   vol-pgdata:
     name: vol-pgdata
-  vol-pgadmin:
-    name: vol-pgadmin
